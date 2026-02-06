@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Hunt - Level 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkAnswer() {
+            const ans = document.getElementById("ans").value.toLowerCase();
+            if (ans === "css") {
+                window.location.href = "win.html";
+            } else {
+                alert("Wrong answer 😅");
+            }
+        }
+    </script>
+</head>
+<body class="center">
+
+    <h1>🧩 Level 2</h1>
+
+    <p><b>Which language is used for styling web pages?</b></p>
+
+    <input type="text" id="ans" placeholder="Your answer">
+    <br><br>
+    <button onclick="checkAnswer()">Submit</button>
+
+</body>
+</html>

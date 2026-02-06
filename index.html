@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Hunt - Level 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkAnswer() {
+            const ans = document.getElementById("ans").value.toLowerCase();
+            if (ans === "html") {
+                document.getElementById("next").style.display = "block";
+            } else {
+                alert("Wrong answer! Try again 🔍");
+            }
+        }
+    </script>
+</head>
+<body class="center">
+
+    <h1>🕵️ QR Hunt – Level 1</h1>
+
+    <p>Question:</p>
+    <p><b>Which language is used to create web pages?</b></p>
+
+    <input type="text" id="ans" placeholder="Your answer">
+    <br><br>
+    <button onclick="checkAnswer()">Submit</button>
+
+    <div id="next" class="hint">
+        <p>✅ Correct!</p>
+        <p>📍 Find the next QR near the notice board</p>
+    </div>
+
+</body>
+</html>
